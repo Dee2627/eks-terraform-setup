@@ -17,18 +17,3 @@ This repository contains Terraform code to provision a **highly available, produ
 - **Security Group** with restricted inbound rules
 
 ---
-
-## 📂 Project Structure
-Production-EKS-with-Terraform/
-│── EKS/ # Main Terraform config for EKS
-│ ├── backend.tf # S3 backend for remote state
-│ ├── dev.tfvars # Variables for dev environment
-│ ├── main.tf # Root module calling sub-modules
-│ ├── variables.tf # Input variables
-│
-│── modules/ # Terraform modules
-│ ├── eks.tf # EKS Cluster & Node Groups
-│ ├── vpc.tf # VPC, Subnets, Route Tables, NAT
-│ ├── iam.tf # IAM Roles & Policies
-│ ├── gather.tf # Data sources & OIDC
-│ ├── variables.tf # Module variables
